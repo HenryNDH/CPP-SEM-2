@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		 <title> Example Form 2 </title>
+		 <meta charset="utf-8">
+</head>
+<body>
+
+    <h2 style="color:blue;"> Form Example </h2>
+    <form name="formName" method = "POST" 
+        action ="https://httpbin.org/post">
+        <label>Course: </label>
+        <input type="text" name="course" value="BTI225"> 
+        <br>
+        <label>Name: </label>
+        <input type="text" name="uName"  maxlength="50" required ="required" >
+        <br>
+        <label>Password: </label>
+        <input type="password" name ="pswd">
+        <br>
+        <label>Email: </label>
+        <input type="email" name = "email">
+        <br>
+        <label>Age: </label>
+        <input type="number" name="age" min="0" max="1000">
+        <br>
+        <label>Upload your resume: </label>
+        <input type="file" name="resume">
+
+        <br>
+        <label>Comment: </label>
+        <textarea name="comment" cols="30" rows="5">
+            Default text
+        </textarea>
+        <br>
+        <label>Favorite Color: </label>
+        <input type="radio" name="color" id="red" value="Red" checked> 
+        <label for="red"> Red </label>
+        <input type="radio" name="color" id="blue" value="Blue"> 
+        <label for="blue">No, blue! </label>
+        <input type="radio" name="color" value="Purple"> No, Purple!
+
+        <br>
+        <label> Hobbies: </label>
+        <input type="checkbox" name="hobby" value="swimming" id="swimming"> 
+        <label for="swimming">swimming </label>
+        <input type="checkbox" name="hobby" value ="2" checked ="checked"> Reading
+        <input type="checkbox" name="hobby" value="3"> sleeping
+        <br>
+        <label> Subject: </label>
+        <input type="text" list="subjects" name="course2" placeholder="Click here to select" />
+         <datalist id="subjects">
+             <option value="APC100">APC100</option>
+             <option value="EAC150">College English</option>
+             <option value="ICA002">ICA002</option>
+             <option value="IPC144">IPC144</option>
+             <option value="ULI101">ULI101</option>
+             <option value="IOS110">IOS110</option>
+        </datalist> 
+        <br>
+
+    <label> Weekend Plan: </label>
+        <select name ="plan" size="3" multiple>
+            <option value = 1> Sleep </option>
+            <option value = 2> study </option>
+            <option selected> go shopping </option>
+            <option> reading </option>
+        </select>
+
+        <br><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+
+</body>
+</html>

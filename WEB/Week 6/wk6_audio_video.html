@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My First HTML 5 file </title>
+    <meta charset = "UTF-8">
+    <meta name = "description" content = "HTML Cheat Sheet">
+    <meta name = "keywords" content = "HTML, CSS, JavaScript">
+    <meta name = "author" content = "your name">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h3> Example Audio </h3>
+    <figure>
+      <figcaption>
+        Audio - horse
+     </figcaption>
+      <audio controls loop autoplay>
+        <source src="media/horse.ogg" type="audio/ogg">
+        <source src="media/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    
+    </figure>
+    <hr>
+    <h3> Example Video: </h3>
+  	<!-- Safari does not natively support OGG audio files, 
+				you need install an OGG plugin. Or 
+				just install another web browser to supports OGG files.-->
+<figure>
+  <video width="320" height="240" controls="controls">
+    <source src="media/movie.mp4" type="video/mp4">
+    <source src="media/movie.ogg" type="video/ogg">
+  Your browser doesn't support video
+</video>
+<figcaption> Video Caption </figcaption>
+</figure>
+</body>
+</html>

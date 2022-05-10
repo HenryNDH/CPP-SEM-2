@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Test9
+        </title>
+        <link rel ="stylesheet" href="./css/test9.css">
+        <script src="./test9.js"></script>
+    </head>
+    <body>
+        <h2>Declaration:</h2>
+        <p>I declare that this test is my own work in accordance with Seneca Academic Policy. No part of this work has been copied manually or electronically from any other source (including 3rd party web sites) or distributed to other student. I acknowledge that by beginning this test, I will abide by the above.</p>
+
+        <p><b>Name: </b><u>Hoang Duy Nguyen</u> &nbsp; <b>Student Number: </b><u>108397217</u></p>
+
+        <hr>
+
+        <h3>Practice with CSS & Form</h3>
+        <div>
+            <fieldset>
+                <legend style="color: blue">Film Catalogue [Add]</legend>
+
+                <form method="post" name="test9" id="test9" action="https://httpbin.org/post" 
+                onsubmit= 
+                    "if(!Validate()) {
+                        event.preventDefault(); 
+                        alert('Password does not meet the requirements.')
+                    } 
+                    if (!typeBox) 
+                    {
+                        event.preventDefault(); 
+                        alert('Type Box does not selected.')
+                    }" 
+                    onreset="alert('The form will be reset. Please press OK to continue!')">
+
+                    <br>
+
+                    <div>
+                        <label><span style="color: red;">*</span>IMDB:</label>
+                        <input type="text" maxLength="10" placeholder="Enter IMDB" autofocus required>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label><span style="color: red;">*</span>Movie Name:</label>
+                        <input type="text" placeholder="Enter Movie Name" required>
+                    </div>
+                    
+
+                    <br>
+
+                    <div>
+                        <label>Duration:</label>
+                        <input min="0" max="999" type="number">
+                    </div>
+                   
+                    <br>
+
+                    <div>
+                        <label>Password:</label>
+                        <input type="password" id="passWrd" onkeyup="Validate()">
+                        <br>
+                        <label>&nbsp;</label><a id="request"></a> 
+                        
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label>Email:</label>
+                        <input type="email">
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label>Type:</label>
+                        <label for="action"><input type="radio" name="type" id="action" value="Action"
+                                title="Action"  onclick="check()">Action</label>
+                        <label for="comedy"><input type="radio" name="type" id="comedy" value="Comedy"
+                                title="Comedy"  onclick="check()">Comedy</label>
+                        <label for="other"><input type="radio" name="type" id="other" value="Other"
+                                title="Other"   onclick="check()">Other</label>
+    
+                            <a id="checkBox" style="color: red;">*No type selected!</a></input>
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label>Media:</label>
+                        <select name="media">
+                            <option value="Blu-Ray">Blu-Ray</option>
+                            <option value="DVD">DVD</option>
+                            <option value="Digital">Digital</option>
+                            <option value="others">Others</option>
+                        </select> 
+                    </div>
+
+                    <br>
+
+                    <div>
+                        <label>Note:</label>
+                        <textarea name="note" cols="30" rows="2" maxlength="30" title="Take Some Notes Here"></textarea> 
+                    </div>
+
+                    <br>
+
+                    <input class="button" type="submit" value="Add Movie" title="Add Movie"onclick="Validate()"/>
+
+                    <input type="reset" value="Start Over" title="Start Over?"/>
+                    <br>
+
+                </form>
+            </fieldset>
+        </div>
+    </body>
+    <footer>
+        <mark>
+            <script>
+                var dt=new Date(document.lastModified);
+                document.write('This page was last updated on '+dt.toLocaleString());  
+            </script>
+            <br>
+            &copy; 2022 Hoang Duy Nguyen
+        </mark>  
+        </footer>
+</html>

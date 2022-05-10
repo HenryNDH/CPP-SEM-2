@@ -1,0 +1,9 @@
+/* ------------------------------------------------------
+Reflection
+Author	Hoang Duy Nguyen
+Student ID: 108397217
+Email: hdnguyen12@myseneca.ca
+-----------------------------------------------------------
+Date       Jan 30 2022
+-----------------------------------------------------------*/
+Through this workshop, I have learned how to dynamic memory allocation. Also, I have learned more about boolean functions. Some of my online research shows me how to return in boolean function but most of them have two return statements. After 30 min of learning and getting recommendations from my friends, I found a better way to avoid multiple return statements. Other than that dynamic memory allocation is a huge problem because it caused a lot of memory leaks due to my lack of skills.

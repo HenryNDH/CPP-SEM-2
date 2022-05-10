@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Basics</title>
+</head>
+<body>
+    <div>
+   <h2> Your Info </h2>
+<form name = "frm1" method ="post"   action = "https://httpbin.org/post">
+    
+    <input type ="hidden" name = "secret" value ="version 1">
+
+    <p> Course: <input type="text" name="course" value="BTI225" readonly> 
+    </p>
+    <p> disabled value: <input type="text" name="disabledField" value = "Not send" disabled>
+     </p>
+     <label for="fName"> First Name: </label> 
+     <input type= "text" name = "fName" id="fName" placeholder = "Input your first name" >
+     <p> Last Name: 
+         <input type ="text" name = "lName" size="10" maxlength ="30" title="Input your last name">
+     </p>
+     <p> password: <input type ="password" name ="pswd" 
+                       title = "Input your Password"/> </p>
+    <p> Age: 
+        <input type = "number" name = "age" min="0" max ="999">
+    </p>
+    <p> Upload your resume: 
+        <input type="file" name="resume" multiple />
+    </p>
+    
+    <label> Gender: </label>
+    <input type = "radio" name = "gender" id = "f" value = "F" checked="checked" > 
+    <label for = "f"> Female </label>
+    <input type="radio" name="gender" id = "m" value ="M">
+    <label for = "m"> Male </label>
+    <br>
+    <label> Hobby: </label>
+    <input type ="checkbox" name = "hobby" id="reading" value ="Reading">
+    <label for="reading"> Reading </label>
+    <input type= "checkbox" name = "hobby" value = "music" checked>
+    <label> Music </label>
+    <input type = "checkbox" name = "travel" value = "travel">
+    <label> Travel </label> <br>
+    <label> Subject: </label>
+        <input type="text" list="subjects" name="course2" placeholder="Click here to select" />
+         <datalist id="subjects">
+             <option value="APC100">APC100</option>
+             <option value="EAC150">College English</option>
+             <option value="ICA002">ICA002</option>
+             <option value="IPC144">IPC144</option>
+             <option value="ULI101">ULI101</option>
+             <option value="IOS110">IOS110</option>
+        </datalist> 
+        
+    <p> Weekend Plan
+        <select name ="plan" size = "3" multiple>
+            <option value = 1> Sleep </option>
+            <option value = 2> study </option>
+            <option> go shopping </option>
+            <option> reading </option>
+        </select>
+
+    </p>
+    <p> comment:
+    <textarea name = "comment" cols = 20 rows =5>
+    </textarea> 
+    </p>        
+            <br/> 
+    <input type ="submit" value ="Register"/>
+    <input type = "reset"/>
+    
+</form>
+
+</div>
+</body>
+</html>

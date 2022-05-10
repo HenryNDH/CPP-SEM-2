@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8" />
+   <title>Centering Vertically</title>
+   <style>
+          div { height: 550px;
+               width: 500px; 
+               border: 10px dotted red;
+               }
+	      div.center { 
+		      display: table-cell;
+		      vertical-align: middle; 
+		      /* text-align: center; */
+              }
+           p {display:inline;}
+            span#mySpan
+                {
+                color:red;
+                display: block;/* inline; block; none; */
+                }
+   </style>
+ </head>
+ <body>
+  <div class = "center">
+      <p> This div is vertically centered  </p>
+	  <p id="disp"> This is a paragraph.   </p>
+      <p> This is a paragraph.  </p>
+      <p> This is a paragraph.  </p>
+      <p> Here is <span id= "mySpan"> span </span> with display block </p>
+  </div>
+ </body>
+</html>

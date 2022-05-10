@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		 <title> Example Form 1</title>
+		 <meta charset="utf-8">
+</head>
+<body>
+	  <form method="post" name="example1" id = "example1" 
+	        action = "https://httpbin.org/post"> 
+			<!-- action = "mailto:shiy101@gmail.com">  -->
+
+	  <h3> Please Input Your Answers to the Questions: </h3>
+
+	  <p> Course: <input type = "text" name ="courseName" size = "20" maxlength="50" value = "BTI225" readonly="readonly"/> </p>
+	  <label for="MyName">  Name: </label>
+	  <input type="text"  name="MyName"   size="30" maxlength="50"/>
+
+	  <p> Question: <input type="text"   name="Quest"    size="30"    maxlength="100"/>  </p>
+
+	  <p>Favorite color: <input type="radio"  name="Color"   value="Red" checked = "checked"/> Red
+						 <input type="radio"  name="Color"   value="Blue"/> No, blue!
+						 <input type="radio"  name="Color"   value="purple"/> No, purple!
+	  </p>
+	  <p> Comment:  </p>
+	  <textarea name = "comment" rows = "5" cols = "30" style="resize:none;">Good day!</textarea>
+	  <p> <input type="submit" value="Answer These Questions"/>  </p>
+
+	  <p> <input type ="reset" value = "                Clear                    "/> </p>
+	  </form>
+</html>

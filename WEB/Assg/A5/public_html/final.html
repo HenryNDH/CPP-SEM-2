@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- “Course Information” -->
+    <title>
+        Final Exam
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/final.css">
+    <script src="js/final.js"></script>
+</head>
+
+<body>
+    <!-- (2) Text “Declaration” is in heading 2.  -->
+    <h2>Declaration:</h2>
+    <!-- (3) Display the Declaration text “I declare…” as paragraph. -->
+    <p>I declare that this test is my own work in accordance with Seneca Academic Policy. No part of this work has been
+        copied manually or electronically from any other source (including 3rd party web sites) or distributed to other
+        student. I acknowledge that by beginning this test, I will abide by the above.</p>
+    <!-- (4) Display text “Name:” and “Student Number:” in bold. -->
+    <!-- 5) Replace text “(your name)” with your real full name and “your student number” with your real -->
+    <!-- student number. Both are displayed with underline as the screenshot.  -->
+    <p><b>Name: </b><u>Hoang Duy Nguyen</u> &nbsp; <b>Student Number: </b><u>108397217</u></p>
+    <hr>
+    <h2>Course Information</h2>
+    <form onsubmit="search(); event.preventDefault()" onreset="resetMSG();" method="post">
+        <input id="courseCode" type="text" placeholder="Enter a course code">
+        <input type="submit" value="Search by Course Code" title="Search by Course Code">
+        <input type="reset" value="Clear Search Result" title="Clear Search Result">
+        <div id="searchResult"></div>
+    </form>
+    <div>
+        <fieldset>
+            <legend style="color: blue">Course Registration</legend>
+            <form method="post" id="final" action="https://httpbin.org/post ">
+                <div>
+                    <label>Program:</label>
+                    <input type="text" value="BSD" readonly>
+                </div>
+                <br>
+                <div>
+                    <label><span style="color: red;">*</span>Student Name:</label> <!-- need a validation  -->
+                    <input onkeyup="validation()" id="name" style="width: 50ch;" type="text"
+                        placeholder="Enter name including only Alphabet, apostrophe, and space." required>
+                    <br>
+                    <label>&nbsp;</label><a id="msg" style="color: red;"></a>
+                </div>
+                <br>
+                <div>
+                    <label><span style="color: red;">*</span>Student Number:</label>
+                    <input type="number" min="210000" max="219999" required>
+                </div>
+                <br>
+                <div>
+                    <label>Semester:</label>
+                    <label for="winter"><input type="radio" name="Semester" id="Winter" value="Winter"
+                            title="Winter">Winter</label>
+
+                    <label for="summer"><input type="radio" name="Semester" id="Summer" value="Summer"
+                            title="Summer">Summer</label>
+
+                    <label for="fall"><input type="radio" name="Semester" id="Fall" value="Fall"
+                            title="Fall">Fall</label>
+                </div>
+                <br>
+                <div>
+                    <label>Courses:</label>
+                    <select name="drop-down" id="course" size="3">
+                        <option value="BTP100">BTP100</option>
+                        <option value="BTI225" selected>BTI225</option>
+                        <option value="BTI225">BTI325</option>
+                        <option value="BTI425">BTI425</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <label>Note:</label>
+                    <textarea name="note" cols="30" rows="2" maxlength="30" title="Take Some Notes Here"></textarea>
+                </div>
+                <br>
+                <input class="button" type="submit" value="Register" title="Register">
+                <input type="reset" value="Reset" title="Reset">
+            </form>
+        </fieldset>
+        <mark>
+            <script>
+                var dt = new Date(document.lastModified);
+                document.write('This page was last updated on ' + dt.toLocaleString());
+            </script>
+        </mark>
+    </div>
+</body>
+
+</html>

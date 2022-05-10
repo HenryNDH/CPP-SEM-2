@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<!-- (1) This document (test6.html) has a title “Test6” -->
+	    <title>Test6</title>
+    </head>
+<body>
+    <section class="main center">
+
+		<!-- (2) Text “Declaration” is in heading 2. -->
+    	<h2>
+			Declaration
+		</h2>
+
+		<!-- (3) Display the Declaration text “I declare…” as paragraph. -->
+   		<p>I declare that this is my own work in accordance with Seneca Academic Policy. No part of this work has been copied manually or electronically from any other source (including 3rd party web site) or distributed to other students. <br>
+        I acknowledge that by beginning this test, I will abide by the above.</p>
+
+		<!-- (4) Display text “Name:” and “Student Number:” in bold. -->
+		<!-- (5) Replace text “(your name)” with your real full name and “your student number” with your real student number. Both are displayed with underline as the screenshot. -->
+		<p><b>Name:</b> <u>Hoang Duy Nguyen</u> <b>Student Number:</b> <u>108397217</u></p>
+		
+		<!-- (6) Display the horizontal line -->
+		<hr>
+
+		<!-- (7) Text “Test 6 – Practice with DOM” is in heading 3. -->
+		<h3>Test 6 - Practice with DOM</h3>
+		<script src = "js/test6.js"> </script>
+
+		<!-- (8) “Add Image” is a button. -->
+		<button onclick="AddImage()"> Add Image </button>
+		<!-- (9) Text: Every time user clicks the button "Add Image", a Seneca Logo will be added here. Is plain text under <div> block. -->
+
+		<div>Every time user clicks the button "Add Image", a Seneca Logo will be added here.</div>
+		<section id="imageID"> </section>  
+		<br> 
+		<!-- (10) “Add Table” is a button. -->
+		<button onclick="AddTable()"> Add Table </button>
+
+		<!-- (11) Text: Every time user clicks the button "Add Table", a table will be added here Is plain text under <div> block. -->
+		<div>Every time user clicks the button "Add Table", a table will be added here</div>
+		<table id="tableID"></table>
+		<br> 
+
+		<!-- (12) “Congrats” is a button -->
+		<button onclick="Congrats()"> Congrats </button>
+
+		<!-- Text: This text will be changed to "Congrats", when user clicks the button "Congrats". Is in header 3. -->
+		<h3 id = "congratID">This text will be changed to "Congrats", when user clicks the button "Congrats"</h3>
+	</section>
+
+
+	<mark>
+		<script>
+			var dt=new Date(document.lastModified);
+			document.write('This page was last updated on '+dt.toLocaleString()) ;
+		</script>
+	</mark>
+	<footer>
+		<div class="center">
+			&copy; 2022 Hoang Duy Nguyen
+		</div>
+	</footer>
+</body>
+</html>

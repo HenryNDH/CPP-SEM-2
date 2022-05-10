@@ -1,0 +1,10 @@
+/* ------------------------------------------------------
+Reflection
+Author     : Hoang Duy Nguyen
+Student ID : 108397217
+Email	     : hdnguyen12@myseneca.ca
+-----------------------------------------------------------
+Date       APR 03 2022
+-----------------------------------------------------------*/
+
+Through this workshop, I had clearly know what is the rule of three is. This workshop also reviews what we learned this semester such as operator, and dynamic allocate memory. 

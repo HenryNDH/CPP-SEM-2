@@ -1,0 +1,9 @@
+/* ------------------------------------------------------
+Reflection
+Author	Hoang Duy Nguyen
+Student ID: 108397217
+Email: hdnguyen12@myseneca.ca
+-----------------------------------------------------------
+Date       Feb 20 2022
+-----------------------------------------------------------*/
+Through this workshop, I have learned how to create  Member operators and Helper functions. It is quite easy to learn and I really enjoy the workshop. I have been through an interesting problem solving game.

@@ -1,0 +1,5 @@
+﻿  CarInventory.cpp
+C:\School (on disk)\Semester 2\OOP\Week 4\WS04\lab\CarInventory.cpp(2,9): warning C4068: unknown pragma 'GCC'
+  main.cpp
+  Generating Code...
+  lab.vcxproj -> C:\School (on disk)\Semester 2\OOP\Week 4\WS04\lab\x64\Debug\lab.exe

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <title>HTML FORM</title>
+</head>
+<body>
+  <h2>Example - autocomplete attribute</h2>
+  <form method="post" action="https://httpbin.org/post">
+    First name:<input name="fname" type="text"><br>
+    Last name: <input name="lname" type="text"><br>
+    E-mail: <input name="email" autocomplete="off" type="email"><br>
+    <input value="Submit" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;<input value="    Clear   " type="reset">
+  </form>
+
+  <p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+  <p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field.</p>
+
+
+</body></html>

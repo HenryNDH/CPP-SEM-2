@@ -1,0 +1,38 @@
+
+/* (b) The content of the page takes 60% of the width of the screen, and is aligned to the
+horizontal center of the screen. The top and bottom paddings of the content are 2em.
+The left and right paddings of the content are 3em. The background color is “beige”. */
+body {
+    margin: auto;
+    border: 1px solid red;
+    width: 60%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+    background-color:beige;
+}
+
+/* (c) The form background color is “bisque”. The text in the form is color “blue” */
+form { 
+    color: blue;
+    background-color: bisque;
+}
+
+/* (e) The text of the form fields, such as “IMDB”, “Movie Name”, and others are
+implemented as labels. They are defined as “inline-block”, width 5em. The top and
+bottom paddings are 0px, while the left and right paddings are 0.5em. The labels are
+aligned to right as displayed in screenshot #2.  */
+label {
+    display: inline-block;
+    width: 5em;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align:right;
+}
+
+fieldset{
+    background-color: bisque;
+}

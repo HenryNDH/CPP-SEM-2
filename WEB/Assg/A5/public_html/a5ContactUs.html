@@ -1,0 +1,169 @@
+<!-- I'm really sorry for being unable to finish the JS part of this assignment. 
+I was overwhelmed by a lot of milestones that were due the same day with a short amount of time to do. 
+I know this is my lack of time control. I feel so guilty. I will try to do better in the future. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UFT-8">
+    <title>A5 Contact Us</title>
+    <link rel="stylesheet" href="css/a5ContactUs.css" />
+    <script src="./Link for A5 WEB/a5ContactUs.js"></script>
+</head>
+
+<body lang="en">
+    <header>
+        <img src="./media/oahilogo.jpg" class="logo">
+        <img src="./media/Shoes Logo.jpg" class="logo" style="height: 130px">
+    </header>
+    <nav>
+        <div class="center">
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="list.html">List</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="image.html">Image</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="seneca.html">Seneca</a></li>
+                <li><a href="./a4_src/a4_dom.html">A4 DOM</a></li>
+                <li><a href="./a5Store.html">A5 Store</a></li>
+                <li><a href="./a5ContactUs.html">A5 Contact Us</a></li>
+                <li><a href="honesty.html">Honesty</a></li>
+            </ul>
+        </div>
+    </nav>
+    <aside class="leftSide">
+        <h2>Contact</h2>
+        <table class="contact">
+            <tr>
+                <td>
+                    Phone:
+                </td>
+                <td>
+                    <a href="tel:6478068413" target="_blank">(647)-806-8413</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <a href="mailto:hdnguyen12@myseneca.ca" target="_blank">hdnguyen12@myseneca.ca</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    <a href="https://goo.gl/maps/vkGZhxkNJhh3RxLZ8" target="_blank">14 Le Duan, DN</a>
+                </td>
+            </tr>
+        </table>
+    </aside>
+
+    <section class="main">
+        <article>
+            <aside>
+
+                <fieldset>
+                    <legend style="text-align: left;">Form Requirements</legend>
+                    <form method="post" name="contactForm" id="contactForm" action="https://httpbin.org/post">
+                        <p style="color: red;"> <b>NOTICE:</b> <u>All fields are required</u></p>
+                    <div>
+                        <input type="hidden" name="fullName" value="Hoang Duy Nguyen" />
+                        <label for="fullName">Your Name: <input type="text" name="fullName" value="Hidden Field" disabled></label>
+                    </div>
+                    <br>
+                    <div>
+                        <input type="hidden" name="studentID" value="108397217" />
+                        <label for="studentID">Student Number: </label>
+                        <input type="text" name="studentID" value="Hidden Field" disabled>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="userName" id="userName">User Name: </label>
+                        <input type="text">
+                        <label id="nameError"> </label>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Gender:</label>
+
+                        <label for="male"><input type="radio" name="gender" id="male" value="Male">Male</label>
+
+                        <label for="female"><input type="radio" name="gender" id="female" value="Female">Female</label>
+
+                        <label for="notShare"><input type="radio" name="gender" id="notShare" value="Prefer not to share">Prefer not to share</label>
+                               
+                    </div>
+
+                    <br>
+                    <div>
+                        <label for="age">Age: </label>
+                        <input type="number" name="age" min=0 max=999>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Province:</label>
+                        <select name="drop-down">
+                            <option value="Ontario" selected>Ontario</option>
+                            <option value="Quebec">Quebec</option>
+                            <option value="Nova Scotia">Nova Scotia</option>
+                            <option value="New Brunswick">New Brunswick</option>
+                            <option value="Manitoba">Manitoba</option>
+                            <option value="British Columbia">British Columbia</option>
+                            <option value="Prince Edward Island">Prince Edward Island</option>
+                            <option value="Saskatchewan">Saskatchewan</option>
+                            <option value="Alberta">Alberta</option>
+                            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                        </select>
+                    </div>
+
+                    <br>
+                    <div>
+                        <label for="phoneNum">Phone Number: </label>
+                        <input type="text" name="phoneNum" pattern="^\d{3}-\d{3}-\d{4}$" id="phoneNum" placeholder="(NNN)-NNN-NNNN">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email">
+                    </div>
+
+                    <br>
+                    <div>
+                        <label for="comment">Comment:</label>
+                        <textarea name="comment" cols="30" rows="2" maxlength="30" title="Take Some Notes Here"></textarea>
+                    </div>
+                    <br>
+                    <input type="submit" value="Submit" title="Submit" class="button"/>
+                    <p style="text-align: centerx;">
+                    <p style="color: red;"> <b>NOTICE:</b> <u>All fields are required</u></p>
+                    </p>
+                    </form>
+                </fieldset>
+
+
+
+            </aside>
+
+        </article>
+
+    </section>
+    </section>
+    <footer>
+        <mark>
+            <script>
+                var dt = new Date(document.lastModified);
+                document.write('This page was last updated on ' + dt.toLocaleString());  
+            </script>
+            <br>
+            &copy; 2022 Hoang Duy Nguyen
+        </mark>
+    </footer>
+</body>
+
+</html>

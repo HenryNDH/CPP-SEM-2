@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- (1) This document (test8.html) has a title “Test8”.  -->
+        <title>
+            Test8
+        </title>
+        <link rel ="stylesheet" href="./css/test8.css">
+    </head>
+    <body>
+        <!-- (2) Text “Declaration” is in heading 2 -->
+        <h2>Declaration:</h2>
+        <!-- (3) Display the Declaration text “I declare…” as paragraph. -->
+        <p>I declare that this test is my own work in accordance with Seneca Academic Policy. No part of this work has been copied manually or electronically from any other source (including 3rd party web sites) or distributed to other student. I acknowledge that by beginning this test, I will abide by the above.</p>
+        <!-- (4) Display text “Name:” and “Student Number:” in bold. -->
+        <!-- (5) Replace text “(your name)” with your real full name and “your student number” with your
+        real student number. Both are displayed with underline as the screenshot. -->
+        <p><b>Name: </b><u>Hoang Duy Nguyen</u> &nbsp; <b>Student Number: </b><u>108397217</u></p>
+
+        <!-- (6) Display the horizontal line -->
+        <hr>
+
+        <!-- (7) Text “Practice with CSS & Form” is in heading 3. -->
+        <h3>Practice with CSS & Form</h3>
+        <div>
+            <fieldset>
+                <legend style="color: blue">Film Catalogue [Add]</legend>
+
+                <!-- (8) “Film Catalogue [Add] ” is a form. You need to implement it as screenshot #2. When user
+                clicks the button “Add Movie”, the form data will be sent to https://httpbin.org/post.
+                Form fields will be described as follows. For the features/ attributes that are not specified,
+                you can determine as needed. -->
+
+                <form method="post" name="test8" id="test8" action="https://httpbin.org/post"
+                onreset="alert('The form will be reset. Please press OK to continue!')">
+                    <br>
+                    <!-- (a) "IMDB": required. User can freely input the IMDB value in one line. The field can only handle a
+                    maximum of 10 characters. This field displays a hint "Enter IMDB". When the page is loaded, the
+                    "IMDB" field should be automatically focused. Once user starts to type the first number, the hint
+                    disappears.  -->
+
+                    <div>
+                        <label><span style="color: red;">*</span>IMDB:</label>
+                        <input type="text" maxLength="10" placeholder="Enter IMDB"  required>
+                    </div>
+
+                    <br>
+
+                    <!-- (b) “Movie Name”: required. One line input. This field displays a hint " Enter Movie Name”. Once user
+                    starts to type the first number, the hint disappears. -->
+
+                    <div>
+                        <label><span style="color: red;">*</span>Movie Name:</label>
+                        <input type="text" placeholder="Enter Movie Name" required>
+                    </div>
+                    
+
+                    <br>
+                    <!-- (c) “Duration”: Number. Minimum 0, maximum 999. -->
+                    <div>
+                        <label>Duration:</label>
+                        <input min="0" max="999">
+                    </div>
+                   
+                    <br>
+
+                    <!-- (d) “Password”: it’s a password. User’s input will be masked. -->
+                    <div>
+                        <label>Password:</label>
+                        <input type="password">
+                    </div>
+
+                    <br>
+
+                    <!-- (e) “Email”: it takes email input. If user’s input misses character “@”, it will be considered invalid.
+                    Note, do NOT need JavaScript validation. Use HTML5 type instead. -->
+                    <div>
+                        <label>Email:</label>
+                        <input type="email">
+                    </div>
+
+                    <br>
+                    
+                    <!-- (f) "Type": User can select only one from : "Action", "Comedy", or “Other”. User can click the circle or
+                    the text (i.e., “Action”, “Comedy”, “Other”) to select it -->
+                    <div>
+                        <label>Type:</label>
+                        
+                        <label class="subLabel" for="action">
+                            <input type="radio" id="action" value="Action">Action</label>
+                        
+                        <label class="subLabel" for="comedy">
+                            <input type="radio" id="comedy" value="Comedy">Comedy</label>
+                        
+                        <label class="subLabel" for="other">
+                            <input type="radio" id="other" value="Other">Other</label>
+                    </div>
+
+                    <br>
+
+                    <!-- (g) "Media": is a drop-down menu that displays two options at once. The user can select only one
+                    type from the list, including "Blu-Ray", "DVD", "Digital", and “Others”. Preselect "Blu-Ray". -->
+                    <div>
+                        <label>Media:</label>
+                        <select name="media">
+                            <option value="Blu-Ray">Blu-Ray</option>
+                            <option value="DVD">DVD</option>
+                            <option value="Digital">Digital</option>
+                            <option value="others">Others</option>
+                        </select> 
+                    </div>
+
+                    <br>
+                    
+                    <!-- (h) “Note”: user can enter multi-line text. The size of the box is 30 characters width and 2 rows tall. [ -->
+                    <div>
+                        <label>Note:</label>
+                        <textarea name="note" cols="30" rows="2" maxlength="30" title="Take Some Notes Here"></textarea> 
+                    </div>
+
+                    <br>
+
+                    <!-- (i) "Add Movie": This button submits the form -->
+                    <input class="button" type="submit" value="Add Movie" title="Add Movie"/>
+
+                    <!-- (j) "Start Over": This button clears the form of all entered data -->
+                    <input type="reset" value="Start Over" title="Start Over?"/>
+                    <br>
+
+                </form>
+            </fieldset>
+            <mark>
+                <script>
+                var dt=new Date(document.lastModified);
+                document.write('This page was last updated on '+dt.toLocaleString()) ;
+                </script>
+            </mark>
+        </div>
+    </body>
+</html>

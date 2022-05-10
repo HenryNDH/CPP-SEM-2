@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <title>HTML Form</title>
+   <style> 
+      body { margin: 0 20%; }
+   </style>
+</head>
+<body>
+  <h1>HTML Form - &lt;input&gt; Tags (selection)</h1>
+
+  <form name = "frm1"  method="post" action="https://httpbin.org/post">
+	<h3>type="checkbox"</h3>
+	<p>Which operating system do you use? </p> 
+	<input type="checkbox" name="system_type" id="system_type-2" value="2" >Windows 7<br> 
+	<input type="checkbox" name="system_type" id="system_type-3" value="3" checked="checked" >Windows 8<br> 
+	<input type="checkbox"name="system_type" id="system_type-4" value="4" checked >Unix<br> 
+	<hr>
+
+	<h3>type="radio"</h3>
+    <ul>
+	  <li><input name="paymethod" id="paymethod-1" value="cash" checked="checked" type="radio">Cash</li>   
+	  <li><input name="paymethod" id="paymethod-2" value="cheque" type="radio">Cheque</li>   
+	  <li><mark>Credit card</mark>     
+		<ul>      
+		  <li><input name="paymethod" id="paymethod-3" value="mastercard" type="radio"> Mastercard</li>      
+		  <li><input name="paymethod" id="paymethod-4" value="visa" type="radio">Visa</li>      
+		</ul>
+	  </li>  
+    </ul>
+	<hr>
+	
+	<h3><mark>type="text" with a list</mark> - HTML5</h3>
+	<label> Select a Course: </label>
+    <input type="text"  list="subjects" name="course" placeholder="Click here to select">
+    <datalist id="subjects">
+	  <option value="APC100">APC100</option>
+	  <option value="EAC150">College English</option>
+	  <option value="ICA002">ICA002</option>
+	  <option value="IPC144">IPC144</option>
+	  <option value="ULI101">ULI101</option>
+	  <option value="IOS110">IOS110</option>
+    </datalist> 
+    <hr>
+	<h3>type="submit" and type="reset" without using value attribute</h3>
+    <input type="submit">&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="reset">
+  </form>
+
+
+</body></html>

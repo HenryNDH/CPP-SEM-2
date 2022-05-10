@@ -1,0 +1,44 @@
+body {background-color: beige;}
+
+/* (2) The whole page is horizontally centered to the screen with width of 80% of the screen.
+The page has a “dotted” border width 2 pixels.
+The content has a padding “1em” to its borders. */
+.content {
+    width: 80%;
+    margin: auto;
+    border-style: dotted;
+    border: dotted 2px black;
+    padding:  1em;
+  }
+
+
+  /* (9) Table is defined as displayed, border solid line, 2 pixels width. Define css property “border-collapse” with value “collapse”.
+The table takes 50% of the page width, and horizontally centered to the page.
+The first row is defined as table header, color “gainsboro”,
+The middle three “Data” rows have the background color of “greenyellow”
+The last “Summary” row has the background color “yellow”, text color “red”. */
+table{
+    border: solid 2px black;
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+
+th {
+    background-color: gainsboro;
+    border: solid 2px black;
+}
+
+td {
+    text-align:  center;
+    background-color: greenyellow;
+    border: solid 2px black;
+}
+
+tfoot tr td{
+    color: red;
+    text-align: center;
+    background-color: yellow;
+    border: solid 2px red;
+}
+  

@@ -1,0 +1,129 @@
+html {
+    background-color: white;
+}
+
+.logo {
+    height: 110px;
+}
+
+header {
+    height: 120px;
+    text-align: center;
+    width: auto;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.leftSide {
+    text-align: center;
+    background-color: #4E6B35;
+    width: 15%;
+    height: 1230px;
+    float: left;
+    margin-right: 30px;
+    border-radius: 1.5em;
+}
+
+.main {
+    text-align: center;
+    background-color: #B5D359;
+    width: 65%;
+    float: left;
+    height: auto;
+    border-radius: 1.5em;
+}
+
+.rightSide {
+    text-align: center;
+    background-color: #4E6B35;
+    text-align: center;
+    width: 15%;
+    float: left;
+    margin-left: 40px;
+    height: 1230px;
+    border-radius: 1.5em;
+}
+
+footer {
+    text-align: center;
+    height: 60px;
+    width: 100%;
+    background-color: #4E6B35;
+    margin-top: 20px;
+    float: left;
+    font-size: 20px;
+}
+
+/* NAVIGATION BAR */
+nav {
+    height: 50px;
+    width: auto;
+    background: #4E6B35;
+    border: #000 solid 1px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin: 0 0 0 -12px;
+    padding: 0px;
+}
+
+nav ul li {
+    padding-left: 4%;
+    float: left;
+}
+
+nav ul li a {
+    padding: 10px 12px 13px 12px;
+    display: block;
+    line-height: 40px;
+    font: 95% Tahoma, sans-serif;
+    color: #ddd;
+    text-decoration: none;
+
+}
+
+
+
+nav ul li a:hover {
+    border-bottom: white solid 6px;
+}
+
+/* NAVIGATION BAR */
+.department {
+    text-align: left;
+    background-color: #4E6B35;
+    border: #000 solid 0px;
+    padding-left: 10px;
+    margin-left: 30px;
+    height: 70px;
+    width: 100px;
+    display: block;
+}
+
+.ads {
+    padding: 20%;
+    overflow: hidden;
+    text-align: center;
+}
+
+button {
+    border: none;
+    background-color: #FFC496;
+}
+
+button:hover {
+    border: none;
+    background-color: yellow;
+}
+
+table {
+    margin: auto;
+}
+
+table tr td {
+    padding: 30px;
+}

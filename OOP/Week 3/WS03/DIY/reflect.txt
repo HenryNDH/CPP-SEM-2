@@ -1,0 +1,9 @@
+/* ------------------------------------------------------
+Reflection
+Author	Hoang Duy Nguyen
+Student ID: 108397217
+Email: hdnguyen12@myseneca.ca
+-----------------------------------------------------------
+Date       Feb 06 2022
+-----------------------------------------------------------*/
+Through this workshop, I have learned how to use class, define the class type, and how to access private or public objects of the class. Everything was interesting to learn.

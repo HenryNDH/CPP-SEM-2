@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- (1) This document (test7.html) has a title “Test7”, background color “beige”. -->
+        <title>Test7</title>
+        <link href="./css/test7.css" rel ="stylesheet">
+    </head>
+    <body>
+        <div class="content">
+            <!-- (3) Text “Welcome to Test 7” is in heading 2, and horizontally centered to the page. -->
+            <center>
+                <h2>Welcome to Test 7</h2>
+            </center>
+
+            <!-- (4) Text “Declaration” is in heading 3. -->
+            <h3>Declaration</h3>
+
+            <!-- (5) Display the Declaration text “I declare…” as paragraph. -->
+            <p>I declare that this test is my own work in accordance with Seneca Academic Policy. No part of this work has been copied manually or electronically from any other source (including 3rd party web sites) or distributed to other students. I acknowledge that by beginning this test, I will abide by the above.</p>
+            
+            <!-- (6) Display text “Name:” and “Student Number:” in bold. -->
+            <!-- (7) Replace text “(your name)” with your real full name and “your student number” with your real student number. Both are displayed with underline as the screenshot. -->
+            <p><b>Name: </b> <u> Hoang Duy Nguyen</u>   <b>Student Number: </b><u>108397217</u></p>  
+            
+            <table>
+                <!-- (8) Text “Some Data” is table caption -->
+                <caption>Some Data</caption>
+                <thead>
+                    <tr>
+                        <th>Column1</th>
+                        <th>Column2</th>
+                        <th>Column3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data11</td>
+                        <td>Data12</td>
+                        <td>Data13</td>
+                    </tr>
+                    <tr>
+                        <td>Data21</td>
+                        <td>Data22</td>
+                        <td>Data23</td>
+                    </tr>
+                    <tr>
+                        <td>Data31</td>
+                        <td>Data32</td>
+                        <td>Data33</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Summary1</td>
+                        <td>Summary2</td>
+                        <td>Summary3</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <!-- (10) Display timestamp at the bottom of “test7.html”. -->
+            <mark>
+                <script>
+                    var dt=new Date(document.lastModified);
+                    document.write('This page was last updated on '+dt.toLocaleString()) ;
+                    </script>
+                </mark>
+                <br>    
+                <footer style="width: 100%; background-color: black; color: whitesmoke; text-align: center;">&copy; 2022 Hoang Duy Nguyen</footer>
+        </div>
+          
+    </body>
+</html>

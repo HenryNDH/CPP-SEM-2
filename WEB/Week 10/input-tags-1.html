@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <title>HTML Form</title>
+   <style> 
+      body { margin: 0 20%; }
+   </style>
+</head>
+<body>
+  <h1>HTML Form - &lt;input&gt; Tags (text fields &amp; buttons)</h1>
+  <form action="https://httpbin.org/post" name="form1" method="post">
+    <h3>type="text"</h3>
+    Text field 1 <input name="entry1" id="entry1" type="text"> text box default size = 20<br>  
+    Text field 2 <input size="30" maxlength="10" name="entry2" id="entry2" type="text"> size="30" maxlength="10"<br>  
+    Text field 3 <input size="5" maxlength="10" name="entry3" id="entry3" type="text"> size="5" maxlength="10"<br>  
+    Text field 4 <input size="12" value="416-" name="entry4" id="entry4" type="text"><br>
+	<hr>
+	<h3>type="password"</h3>
+	Type in your username <input name="username" value="Tim Hortons"> <br>
+    Type in your password <input name="password" type="password"> <br>
+	<hr>
+
+	<h3>type="hidden"</h3>
+	<input name="entry0" id="entry0" value="value from the form" type="hidden">
+	<hr>
+ 
+	<h3>type="file"</h3>
+	<p>Upload your assignment <input name="assignment" multiple type="file"></p>
+	<hr>
+	
+	<h3>type="button"</h3>
+    <p><input value="Press This Button" type="button">
+        <button onclick="func()"> Click me </button>
+
+    </p>
+	<hr>
+
+	<h3>type="image" - image button</h3>
+	<p>Search <input name="entry6" id="entry" type="text"> 
+          <input src="input-tags-1_files/gogetit.gif" alt="get it" type="image">
+    </p>
+	<hr>
+	
+	<h3>type="submit" and type="reset" </h3>
+    <input value="Submit" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;
+    <input value="    Clear   " type="reset">
+  </form>
+  
+
+
+</body></html>

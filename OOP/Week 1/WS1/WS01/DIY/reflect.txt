@@ -1,0 +1,9 @@
+/* ------------------------------------------------------
+Reflection
+Author	Hoang Duy Nguyen
+Student ID: 108397217
+Email: hdnguyen12@myseneca.ca
+-----------------------------------------------------------
+Date       Jan 21 2022
+-----------------------------------------------------------*/
+Through this workshop, I have re-learned how to use the CString library as well as reinforced my knowledge in pointer and struct. I had a little challenge when moving to CPP because my habit in C sometimes makes my code awkward and wrong. At the beginning of the workshop, I was shocked when the code look so complicated for me. After a few hours of looking through the code that you provided I get understand it better and better. I had a better skill in organizing source code into modules and using a header file safeguard. In this workshop submission, I have faced an error that I found so hard to fix it. I was hopeless and don't know what to do. At the end of the day, I realize that I just forgot to use the "fclose" command and it lead to a memory leak. Through this workshop I have reinforce and updated my knowledge in C,CPP.

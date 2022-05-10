@@ -1,0 +1,10 @@
+/* ------------------------------------------------------
+Reflection
+Author	Hoang Duy Nguyen
+Student ID: 108397217
+Email: hdnguyen12@myseneca.ca
+-----------------------------------------------------------
+Date       MAR 20 2022
+-----------------------------------------------------------*/
+
+Through this workshop, I have learned how to derive class. During the ms1 I find that I am lack knowledge and have not practiced enough. I think I have to go over all the projects again and practice more. Especially on pointer and operator.

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <title>HTML FORM</title>
+   <style> 
+      body { margin: 0 20%; }
+   </style>
+</head>
+<body>
+  <h1>EXAMPLE - &lt;select&gt; Tags and Attributes</h1>
+
+
+  <form action="https://httpbin.org/post" name = "frm1" method="post">
+	<h3>Multiple Selection with optgroup</h3>
+    <p>What would you like to do today?</p>
+	<p>
+	  <select name="what-to-do" id="what-to-do" multiple="multiple" size="9">
+		<optgroup label="Morning">
+		   <option value="1" selected="selected"> Drink Coffee </option>
+		   <option value="2"> Take A Walk </option>
+		   <option value="3"> Buy A Bagel </option>
+		</optgroup>
+		<optgroup label="Evening">
+		   <option value="4"> Read A Book </option>
+		   <option value="5"> Watch TV    </option>
+		</optgroup>
+		<optgroup label="Any time">
+		   <option value="6"> Write a test </option>
+		</optgroup>
+	  </select>
+	</p>
+	<hr>
+	
+    <input value="Submit" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;<input value="    Clear   " type="reset">
+  </form>
+
+
+
+</body></html>

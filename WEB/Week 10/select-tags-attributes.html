@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <title>HTML FORM</title>
+   <style> 
+      body { margin: 0 20%; }
+   </style>
+</head>
+<body>
+  <h1>EXAMPLE - &lt;select&gt; Tags and Attributes</h1>
+
+  <form name="form1" action="https://httpbin.org/post" method="post">
+    <h3>Single Selection without size Attribute</h3>
+    <p>What would you like to do today?</p>
+	<p> 
+	  <select name="what-to-do" id="what-to-do">
+		<option value="1"> Drink Coffee </option>
+		<option value="2" selected="selected"> Read A Book </option>
+		<option value="3"> Take A Walk </option>
+		<option value="4"> Buy A Bagel </option>
+		<option value="5"> Watch TV    </option>
+		<option value="6"> Write a test </option>
+	  </select>
+	</p>
+	<br><hr>
+
+	<h3>Single Selection with size Attribute</h3>
+    <p>What would you like to do today?</p> 
+	<p>
+	  <select name="what-to-do2" id="what-to-do2" size="5">
+		<option value="1"> Drink Coffee </option>
+		<option value="2" selected="selected"> Read A Book </option>
+		<option value="3"> Take A Walk </option>
+		<option value="4"> Buy A Bagel </option>
+		<option value="5"> Watch TV    </option>
+		<option value="6"> Write a test </option>
+	  </select>
+	</p>
+	<hr>
+	
+	<h3>Multiple Selection</h3>
+    <p>What would you like to do today?</p> 
+	<p>
+	  <select name="what-to-do3" id="what-to-do3" multiple="multiple">
+		<option value="1" selected="selected"> Drink Coffee </option>
+		<option value="2" selected> Read A Book </option>
+		<option value="3"> Take A Walk </option>
+		<option value="4"> Buy A Bagel </option>
+		<option value="5"> Watch TV    </option>
+		<option value="6"> Write a test </option>
+	  </select>
+	</p>
+	<hr>
+	
+    <input value="Submit" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;<input value="    Clear   " type="reset">
+  </form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <title>HTML FORM</title>
+   <style> 
+      body { margin: 0 20%; }
+	  input{width:200px;}
+   </style>
+</head>
+<body>
+  <h1>Example - HTML5 Form &lt;input&gt; Type &amp; Attributes</h1>
+  <form action="https://httpbin.org/post" name="form1" method="post">
+    <h3>Example: html5 features (Test using Google Chrome for best compatibility)</h3>
+    <p>
+	  
+	  <input type="text" name="entry03" required="required" > <mark>required</mark><br>
+	  <input type="text" name="entry01" id="entry01ID" autofocus > <mark>autofocus</mark> - <label for="entry01ID">autofocus though not the first field</label><br>
+	  <input type="text" name="entry02" id="first_name" placeholder="First name goes here"> <mark>placeholder</mark><br>  
+	  <input type="date" name="entry04" > <mark>type="date"</mark><br>
+	  <input type="month" name="entry05" > <mark>type="month"</mark><br>
+	  <input type="time" name="entry06" > <mark>type="time"</mark><br>
+	  <input type="datetime-local" name="entry07" > <mark>type="datetime-local"</mark><br>
+	  <input type="week" name="entry08"> <mark>type="week"</mark><br>
+	  <input type="color" name="entry09" value="#000000"> <mark>type="color"</mark><br>
+	  <input type="number" name="entry10" > <mark>type="number"</mark><br>
+	  <input type="number" name="entry11" min="1" max="9" > <mark>with min &amp; max</mark><br>
+	  <input type="number" name="entry12" min="2" max="20" step="2" > <mark>with min, max &amp; step</mark><br>
+	  <input type="range" name="entry14" id="flying" min="0" max="100" value="0" 
+	  		oninput="level.value = entry14.valueAsNumber" >&nbsp;
+	  <output for="flying" name="level">0</output>/100 
+	  <mark>type="range", including &lt;output&gt; tag</mark><br>
+	  <input id="email" name="entry15" required="required" type="email"> <mark>type="email"</mark><br>
+	  <input id="website" name="entry16" required="required" type="url"> <mark>type="url"</mark><br>
+	  <input id="phone" name="entry17" required="required" type="tel"> <mark>type="phone"</mark><br>
+	  <input id="find" name="entry18" type="search"> <mark>type="search"</mark><br>
+    </p>
+
+    <input name="entry19" value="Submit Information" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;
+	<input name="entry20" value="    Clear   " type="reset">
+  </form>
+  
+
+
+</body></html>

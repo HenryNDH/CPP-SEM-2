@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title> Validation Example </title>
+     <meta charset=utf-8" >
+	<style>
+		body{
+				margin: 0 10%;
+			}
+		form {  
+			border: 10px solid grey; 
+			padding: 5px; 
+		}
+	    input:focus{
+					border: darkgreen 1px solid;
+					background: yellow;
+					}
+		/*p:hover{color: red;} */
+		a:hover{font-size:1.5em; background: #BF0000;}
+		#id1:hover{background: grey;}
+	</style>
+     <script>
+	        /* validate the form while submitting the data */
+            function validateAll(frm1)
+            {
+				return validName(frm1) && validPhone(frm1);
+			}
+			function validName(frm1)
+			{
+				
+				var errMsg = "";
+				var inputValue = frm1.name.value.trim();
+				if (inputValue.length < 1)
+				{
+					
+					errMsg="Name cannot be empty.";
+					displayError("nameId", "nameErr", errMsg);
+					return false;
+				} else {
+					for (var i = 0; i < inputValue.length; i++)
+			  		{
+						if (inputValue[i] >='a' && inputValue[i]<='z' || inputValue[i]>='A' && inputValue[i] <='Z')
+							{
+								clearErr("nameId", "nameErr");
+								return true;
+						}
+					  }  // for
+					  // if not return true from for, return false
+					  errMsg="Error: at least one alpha.";
+					  displayError("nameId", "nameErr", errMsg);
+					  return false;
+				}
+			}
+			function validPhone(frm1)
+			{
+			   var errMsg = "";
+               if (frm1.phone.value.trim().length != 10)
+               {
+			     errMsg = "enter 10 digits";
+				 displayError("phoneId", "phoneErr", errMsg);
+                 /* alert("enter 10 digits");
+                 frm1.phone.focus();
+ 		         frm1.phone.select();
+				 */
+		         return false;
+                }
+               else  if (parseInt(frm1.phone.value) != frm1.phone.value)
+		      {   errMsg = "enter phone number, digit only";
+			      displayError("phoneId", "phoneErr", errMsg);
+			  /*
+		         alert('Please enter a phone number, numbers only');
+		         frm1.phone.focus();
+		         frm1.phone.select();
+				 */
+				 /*  if invalid, stop submitting the form by return false  */
+		         return false;  
+               }
+			   /* if input is valid, clear Error Message, and submit the form */
+			   clearErr("phoneId", "phoneErr");
+               return true;
+             }
+			 
+			/* highlight the error field, display error message */
+			function displayError(fieldId,errId, errMsg)
+			{
+			    /* get the field object with invalid input */
+			    var fieldObj = document.getElementById(fieldId);
+				
+				/* hightlight the error field with red border */
+				fieldObj.style.border="solid 1px red";
+			    
+				/* error field gets focus and selected, ready to reinput */
+				fieldObj.focus();
+				fieldObj.select();
+				
+				/* display error message beside the error field in red */
+				var errObj = document.getElementById(errId);
+				errObj.innerHTML = errMsg;
+				errObj.style.color = "red";
+				errObj.style.fontSize = "1.5em"; // 16px
+				//  css: scalable 1em =16px, width: 60%// 667px
+			}
+			/* if valid, clear Error message, reset the focused field border */
+			function clearErr(fieldId, errId)
+			{
+			   var fieldObj = document.getElementById(fieldId);
+				fieldObj.style.border="";  // back to original setting
+				
+			   var errObj = document.getElementById(errId);
+			   errObj.innerHTML = "";  // empty the error message
+			}
+         </script>
+    
+</head>
+
+<body>
+	<h3> Validation Rules:</h3>
+	<ul>
+		<li> Name: cannot be empty, at least 1 alpha</li>
+		<li> Phone Number: 10 digits</li>
+	</ul>
+	<h3> Display Error message:</h3>
+	<ul>
+		<li>Highlight the error field, e.g., red border, get focus</li>
+		<li>Display error message beside the error field.</li>
+		<li>Error message is 1.5 times big and in color red</li>
+		<li>Clear the error field once input is valid </li>
+	</ul>
+	<h3> When input is valid (fixed) </h3>
+	<ul>
+		<li>Remove/reset highlight of the previous error field</li>
+		<li>Clear the error field </li>
+	</ul>
+  
+  <form id="frm_ph" name="frm_ph" method = "post"
+        action = "https://httpbin.org/post"
+        onsubmit = "return validateAll(this);">
+		<!-- onsubmit="return validateMyForm(frm_ph);">  -->
+	<label>Name: </label>
+	<input type="text" name="name" id="nameId" placeholder="Enter name with at least 1 alpha">
+	<br><label id="nameErr"> </label> <br>
+
+	<label> Phone Number: </label>
+		<input type="text" name="phone" id = "phoneId" 
+		 		placeholder="phone number in 10 digits"/>
+	
+	<label id="phoneErr"> </label> <br>
+    <input type="submit" value="Submit"/>
+    <input type="reset" value="Reset" />
+    <!-- <input type="submit" value="Submit" onclick="return validateMyForm(frm_ph)"/> -->
+    <!-- <input type="submit" value="Submit" onclick="validateMyForm(frm_ph)"/>  -->
+  </form>
+
+  
+</body>
+</html>

@@ -1,0 +1,9 @@
+/* ------------------------------------------------------
+Reflection
+Author	Hoang Duy Nguyen
+Student ID: 108397217
+Email: hdnguyen12@myseneca.ca
+-----------------------------------------------------------
+Date       Feb 12 2022
+-----------------------------------------------------------*/
+Through this workshop, I have learned how to create default and overloaded constructors and destructors. Also I have relearn how to deal with dynamic memory. I still deal with memory leak in lab but I did it better in my DIY.

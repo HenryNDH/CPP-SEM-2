@@ -1,0 +1,10 @@
+/* ------------------------------------------------------
+Reflection
+Author     : Hoang Duy Nguyen
+Student ID : 108397217
+Email	     : hdnguyen12@myseneca.ca
+-----------------------------------------------------------
+Date       APR 13 2022
+-----------------------------------------------------------*/
+
+Through this workshop, I have learned about how to use Code function templates and Use class templates. This new knowledge confused me just like when I started to learn about struct or class.

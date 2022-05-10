@@ -1,0 +1,52 @@
+.container{
+    width:80%;
+    margin:auto;
+}
+header{
+    background-color: #ddd;
+    padding:5px 25px;
+}
+nav{
+    padding:8px;
+    background-color: #444;
+}
+nav ul{
+    list-style-type: none;
+    padding-left:20px;
+    margin:0px;
+}
+
+nav ul li{
+    display:inline-block;
+    background-color: #444;
+}
+
+nav ul li a{
+    background-color: #666;
+    color: #eee;
+    text-decoration: none; /* underline, overline, line-through */
+    padding:0 5px;	
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size:13px;
+}
+
+.main{
+    float:left;
+    width: 100%;
+    padding-bottom:10px;
+}
+
+footer{
+    clear:both;
+    background-color: #444;
+    color: #eee;
+    padding:10px;
+}
+
+footer h2{
+    margin:0px;
+    text-transform: uppercase;
+    font-size:13px;
+    padding:0 5px;	
+}

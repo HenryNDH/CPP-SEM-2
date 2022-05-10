@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <title>Validation</title>
+   <style> 
+      body { margin: 0 10%; }
+	  form {  
+              border: 10px solid #00ff00; 
+              padding: 5px; 
+      }
+   </style>
+   <script>
+	  function formValidation(frm) {
+         return validateTextarea(frm);
+      }
+	  
+      function validateTextarea(form1)   {
+		 /* Validate that the textarea named "comments" in the form passed-in
+		    using this keyword*/
+		if (form1.comments.value.trim().length == 0) {// check length of textarea
+				 alert("Error: No input! \n Please enter your comments.\n");
+				 form1.comments.value = "";
+				 form1.comments.focus();
+				 return false;
+		 }
+		 return true;
+	  } // function
+   </script>
+</head>
+<body>
+  <h1>Example - JavaScript Form Validation:<mark> textarea </mark></h1>
+  <h3> Validation Rule:</h3>
+  <ul>
+     <li>Cannot be empty</li>
+     <li>Cannot be only white spaces</li>
+  </ul>
+
+  <form method="post" name="form1" 
+         action="https://httpbin.org/post" 
+         onsubmit="return formValidation(this);">
+   
+      <p>Your Comments</p> 
+	  <textarea name="comments" cols="50" rows="6" required>
+
+     </textarea>
+	  <p>
+		 <input type="submit" value="Submit" >
+		  &nbsp;&nbsp;
+		 <input type="reset" value="    Clear     ">  
+	  </p>
+  </form>
+  <hr>
+
+
+</body></html>

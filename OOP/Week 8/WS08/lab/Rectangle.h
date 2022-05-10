@@ -1,0 +1,18 @@
+#pragma once
+#ifndef SDDS_RECTANGLE_H
+#define SDDS_RECTANGLE_H
+#include "LblShape.h"
+#include <stdio.h>
+namespace sdds {
+    class Rectangle : public LblShape {
+        int m_width = 0;
+        int m_height = 0;
+    public:
+        Rectangle();
+        Rectangle(const char* label, int width, int height);
+        virtual ~Rectangle() {};
+        void getSpecs(std::istream& istr);
+        void draw(std::ostream& ostr) const;
+    };
+}
+#endif // !SDDS_RECTANGLE_H

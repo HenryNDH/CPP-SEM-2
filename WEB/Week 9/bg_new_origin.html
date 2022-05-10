@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <title> background </title>
+    <meta charset="UTF-8">
+    <style type="text/css">
+       div {
+              border: 20px solid red;
+              padding: 35px 35px 35px 155px;
+              background-image: url("seneca_logo.gif");
+              background-repeat: no-repeat;
+              background-position: left;
+            }
+       #div1 {
+               background-origin: border-box;
+             }
+       #div2 {
+                background-origin: padding-box;
+             }
+      #div3 {
+                background-origin: content-box;
+             }
+    </style>
+</head>
+
+<body>
+   <div> testing paragraph background. div.... <br/> 
+    <mark> background-position: left; </mark> <br>
+  blahblahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblaharagraph background. blahblahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblaaragraph background. blahblahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblablahblahblahblah</div>
+
+<br/>
+
+   <div id="div1"> testing paragraph background. div1... <br/> 
+   <mark> background-origin: border-box; </mark> <br>
+    blaharagraph background. blahblahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblaaragraph background. blahblahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblablahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah</div>
+
+<br/>
+  <div id="div2"> testing paragraph background. div2... <br>
+    <mark>background-origin: padding-box; </mark> <br>
+  blaharagraph background. blahblahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblaaragraph background. blahblahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblablahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah</div>
+
+<br/>
+  <div id="div3"> testing paragraph background. div3... <br>
+    <mark> background-origin: content-box;</mark> <br>
+    blaharagraph background. blahblahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblaaragraph background. blahblahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblablahblah blahblahblahblahblahblahblah
+  blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah</div>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "width=device-width, intial-scale=1.0">
+
+    </head>
+    <body>
+        <h3> Table Example</h3>
+        <table border="2px">
+            <caption> My Class</caption>
+            <thead style="background-color: lightblue;">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Student Id</th>
+                <th> Subject </th>
+                <th> Mark </th>
+            </tr>
+           </thead>
+           <tbody style="background-color: lightyellow;">
+            <tr>
+                <td> Jack </td>
+                <td> White </td>
+                <td> 10001 </td>
+                <td rowspan = "2"> Web Programming </td>
+                <td> 90</td>
+            </tr>
+            <tr> 
+                <td> Kate </td>
+                <td> Brown </td>
+                <td>10002</td>
+               <!--  <td> Web Programming </td> -->
+                <td> 87</td>
+            </tr>
+            <tr>
+                <td colspan = 2 >Tom Johnson </td>
+                <!-- <td> Johnson </td> -->
+                <td> 10003 </td>
+                <td> C++ </td>
+                <td> 90</td> 
+            </tr>
+            <tr>
+                <td>Bob </td>
+                <td> Smith </td>
+                <td> 10004 </td>
+                <td> Data Base </td>
+                <td> 90</td>
+            </tr>
+           </tbody>
+           <tfoot style="background-color: lightgreen;">
+            <tr>
+                <td>Note</td>
+                <td colspan = "4"> Here is the note for this table.</td>
+            </tr>
+        </tfoot>
+        </table>
+    </body>
+</html>

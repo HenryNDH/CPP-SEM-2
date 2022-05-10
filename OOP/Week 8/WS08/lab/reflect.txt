@@ -1,0 +1,10 @@
+/* ------------------------------------------------------
+Reflection
+Author     : Hoang Duy Nguyen
+Student ID : 108397217
+Email	     : hdnguyen12@myseneca.ca
+-----------------------------------------------------------
+Date       MAR 26 2022
+-----------------------------------------------------------*/
+
+Through this workshop I learned how to use pure virtual functions as well as I consolidated my knowledge about classes and inheriting classes. 

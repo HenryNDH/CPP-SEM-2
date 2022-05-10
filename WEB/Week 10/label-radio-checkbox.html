@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+   <meta charset="UTF-8">
+   <title>HTML FORM</title>
+   <style> 
+      body { margin: 0 20%; }
+   </style>
+</head>
+<body>
+  <h1>Example - &lt;label&gt;'s with checkbox and radio controls</h1>
+   <form name="form1" action="https://httpbin.org/post" method="post">
+		<p>Which operating system do you use? </p> 
+		<!-- Using the "for" attribute -->
+		<input name="system_type" id="system_type-1" value="1" type="checkbox"><label for="system_type-1">Windows 7</label><br> 
+		<input name="system_type" id="system_type-2" value="2" checked="checked" type="checkbox"><label for="system_type-2">Windows 10<br> 
+		<!-- wrapping the control in <label> -->
+		<label><input name="system_type" id="system_type-3" value="3" checked="checked" type="checkbox">Unix</label><br> 
+		<label><input name="system_type" id="system_type-4" value="4" type="checkbox">Mac OSX</label><br> 
+
+		<p>Payment Method</p> 
+		<!-- Using the "for" attribute -->
+		<input name="paymethod" id="paymethod-1" value="cash" checked="checked" type="radio"><label for="paymethod-1">Cash</label>  
+		<input name="paymethod" id="paymethod-2" value="cheque" type="radio"><label for="paymethod-2">Cheque</label>
+		<!-- wrapping the control in <label> -->
+		<label><input name="paymethod" id="paymethod-3" value="mastercard" type="radio"> Mastercard</label>
+		<label><input name="paymethod" id="paymethod-4" value="visa" type="radio">Visa</label>
+		
+		<br><br><input value="submit" type="submit">&nbsp;&nbsp;
+		<input value="clear" type="reset">   
+	</form>
+</body>
+</html>

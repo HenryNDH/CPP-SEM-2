@@ -1,0 +1,16 @@
+/* ------------------------------------------------------
+Reflection
+Author     : Hoang Duy Nguyen
+Student ID : 108397217
+Email	     : hdnguyen12@myseneca.ca
+-----------------------------------------------------------
+Date       APR 10 2022
+-----------------------------------------------------------*/
+
+Through this final workshop, I have learned more about virtual functions, inheritance, and operators. At the beginning of ms3 when we started using the virtual function I was really confused but through this final project, I have more understanding of it. Also through this project, I also faced "additional jump error" in the compiler. At first, it was really hard for me to debug but after research and asking my friend, my problem was finally solved
+
+I got help from Duy Nguyen
+File AidMan.cpp he showed me how to use cstring to get description in Item through a new (operator const char* ()) function created in Item.cpp to return m_desc and how to use find() to search in a string.
+
+I gave help to
+Anh Bui
